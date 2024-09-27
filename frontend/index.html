@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar e Listar Presença</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <nav>
+        <div class="menu">
+            <div class="hamburger">☰</div>
+            <h1>Meu Sistema de Presença</h1>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contatos</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Registrar Presença</h1>
+        <form id="presencaForm">
+            <input type="text" name="nomeAluno" placeholder="Nome do Aluno" required />
+            <input type="text" name="resumoAula" placeholder="Resumo da Aula" required />
+            <input type="text" name="localizacao" placeholder="Localização" required />
+            <button type="submit">Registrar Presença</button>
+        </form>
+
+        <h2>Lista de Presenças</h2>
+        <div id="presencas-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome do Aluno</th>
+                        <th>Resumo da Aula</th>
+                        <th>Localização</th>
+                    </tr>
+                </thead>
+                <tbody id="presencaList">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
